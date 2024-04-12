@@ -1,5 +1,5 @@
 # folder_thumbnailer
-Shell script for bulk generating custom fodler based on a base folder icon.
+Shell script for bulk generating custom folder thumbnails based on a base folder icon.
 
 For all images in /source script:
 - changes all filenames to lowercase
