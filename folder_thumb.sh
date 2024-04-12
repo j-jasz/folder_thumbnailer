@@ -2,10 +2,14 @@
 set -euo pipefail
 
 # paths
-SOURCE_DIR="./images/source"
-TEMP_DIR="./images/temp"
-MERGED_DIR="./images/merged"
-BASE_PNG="./images/base.png"
+rootdir=$(pwd)
+SOURCE_DIR="${rootdir}"/images/source
+TEMP_DIR="${rootdir}"/images/temp
+MERGED_DIR="${rootdir}"/images/merged
+BASE_PNG="${rootdir}"/images/base.png
+
+# Shell option for handling wildcard patterns that does not match any file
+shopt -s nullglob
 
 # Convert filenames to lowercase
 for file in "$SOURCE_DIR"/*.{png,jpg,jpeg}; do
