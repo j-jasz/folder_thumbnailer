@@ -1,4 +1,5 @@
-/images#!/bin/bash
+#!/bin/bash
+set -euo pipefail
 
 # paths
 SOURCE_DIR="./images/source"
