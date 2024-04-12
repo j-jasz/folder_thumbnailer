@@ -7,6 +7,14 @@ TEMP_DIR="./images/temp"
 MERGED_DIR="./images/merged"
 BASE_PNG="./images/base.png"
 
+# Convert filenames to lowercase
+for file in "$SOURCE_DIR"/*.{png,jpg,jpeg}; do
+    # Convert the filename to lowercase
+    newname=$(echo "$file" | tr '[:upper:]' '[:lower:]')
+    # Rename the file to lowercase
+    mv "$file" "$newname"
+done
+
 # Convert JPEG files to PNG and remove original JPEG files
 for icon in "$SOURCE_DIR"/*.{jpg,jpeg}; do
     if [ -f "$icon" ]; then
