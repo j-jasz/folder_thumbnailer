@@ -17,7 +17,7 @@ Directory structure:
 root<br>
 &nbsp;├─ folder_thumb.sh<br>
 &nbsp;└─ images<br>
-&nbsp;&nbsp;├─ base.png<br>
-&nbsp;&nbsp;├─ source<br>
-&nbsp;&nbsp;├─ temp<br>
-&nbsp;&nbsp;└─ merged
+&nbsp;&nbsp;&nbsp;&nbsp;├─ base.png<br>
+&nbsp;&nbsp;&nbsp;&nbsp;├─ source<br>
+&nbsp;&nbsp;&nbsp;&nbsp;├─ temp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└─ merged
