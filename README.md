@@ -11,3 +11,13 @@ For all images in /source script:
 Example workflow with modified Kora folder icon:
 
 ![Workflow example](https://raw.githubusercontent.com/j-jasz/folder_thumbnailer/9758938856b3b725908db22a293668e0ee68e6e7/workflow.png)
+
+Directory structure:
+
+root
+ ├─ folder_thumb.sh
+ └─ images
+     ├─ base.png
+     ├─ source
+     ├─ temp
+     └─ merged
