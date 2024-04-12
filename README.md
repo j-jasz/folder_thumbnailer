@@ -1,7 +1,12 @@
 # folder_thumbnailer
 Shell script for bulk generating custom fodler based on a base folder icon.
 
-Script can handle jpeg, jpg and png formats with both upper and lower case filenames.
+For all images in /source script:
+- changes all filenames to lowercase
+- converts all jpeg/jpg to png
+- scales images down to max 1000x1000px
+- superimposes all the images over the base.png folder image
+- saves the final image to /merged
 
 Example workflow with modified Kora folder icon:
 
