@@ -14,10 +14,10 @@ Example workflow with modified Kora folder icon:
 
 Directory structure:
 
-root
- ├─ folder_thumb.sh
- └─ images
-     ├─ base.png
-     ├─ source
-     ├─ temp
+root<br>
+ ├─ folder_thumb.sh<br>
+ └─ images<br>
+     ├─ base.png<br>
+     ├─ source<br>
+     ├─ temp<br>
      └─ merged
