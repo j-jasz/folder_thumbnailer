@@ -15,9 +15,9 @@ Example workflow with modified Kora folder icon:
 Directory structure:
 
 root<br>
- ├─ folder_thumb.sh<br>
- └─ images<br>
-     ├─ base.png<br>
-     ├─ source<br>
-     ├─ temp<br>
-     └─ merged
+&nbsp;├─ folder_thumb.sh<br>
+&nbsp;└─ images<br>
+&nbsp;&nbsp;├─ base.png<br>
+&nbsp;&nbsp;├─ source<br>
+&nbsp;&nbsp;├─ temp<br>
+&nbsp;&nbsp;└─ merged
