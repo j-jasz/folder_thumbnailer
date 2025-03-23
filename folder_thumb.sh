@@ -12,11 +12,29 @@ BASE_PNG="${rootdir}"/images/base.png
 shopt -s nullglob
 
 # Convert filenames to lowercase
+#~ for file in "$SOURCE_DIR"/*.{png,jpg,jpeg}; do
+    #~ # Convert the filename to lowercase
+    #~ newname=$(echo "$file" | tr '[:upper:]' '[:lower:]')
+    #~ # Rename the file to lowercase
+    #~ mv "$file" "$newname"
+#~ done
+
+# Convert filenames to lowercase
 for file in "$SOURCE_DIR"/*.{png,jpg,jpeg}; do
+    # Get the base name of the file
+    basefile=$(basename "$file")
+
     # Convert the filename to lowercase
-    newname=$(echo "$file" | tr '[:upper:]' '[:lower:]')
-    # Rename the file to lowercase
-    mv "$file" "$newname"
+    newname=$(echo "$basefile" | tr '[:upper:]' '[:lower:]')
+
+    # Check if the new name is different from the original
+    if [[ "$basefile" != "$newname" ]]; then
+        # Rename the file to lowercase
+        mv "$file" "$SOURCE_DIR/$newname"
+        echo "Renamed '$file' to '$newname'"
+    else
+        echo "'$file' is already in lowercase."
+    fi
 done
 
 # Convert JPEG files to PNG and remove original JPEG files
